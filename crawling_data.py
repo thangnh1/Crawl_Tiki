@@ -1,7 +1,6 @@
 import random
 import time
 import urllib
-
 import pymongo
 from bs4 import BeautifulSoup
 import requests
@@ -32,7 +31,10 @@ for p in categories:
         if (json.loads(result).get('data')==None or json.loads(result).get('data')==[]) :
             break
         for item in json.loads(result).get('data'):
-            id_product.append(item.get('id'))
+            if item.get('id') not in id_product:
+                id_product.append(item.get('id'))
+            else:
+                continue
         time.sleep(random.randrange(1, 2))
         num += 1
 
@@ -47,7 +49,7 @@ for img in id_product:
     print('Process {}'.format(img))
     api = 'https://tiki.vn/api/v2/products/{}'.format(img)
     try:
-        res = urllib.urlopen(api)
+        res = urllib.request.urlopen(api)
     except:
         continue
     soup = BeautifulSoup(res.read(), 'html.parser')
