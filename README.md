@@ -22,6 +22,7 @@ Step 5 : Run command `python count_product.py`, result will be saved to result.t
 
 <p align="center">
   <img src="demo/demo_0.png"><br/>
+  <img src="demo/demo_.png"><br/>
   <i>All product in MongoDB</i>
 </p>
 <p align="center">
