@@ -12,10 +12,23 @@ Step 2 : Open with editor tool, install lib
 
 `pip install -r requirements.txt`
 
-Step 3 : Run project
+Step 3 : Config connection in `config.py` 
 
-Crawl all product in Tiki and insert to MongoDB - config connection in `config.py`
+Step 4 : Run command `python crawling_data.py`, data will be saved to MongoDB and images will be saved to images folder
 
-`python crawling_data.py`
+Step 5 : Run command `python count_product.py`, result will be saved to result.txt
 
 ## Demo
+
+<p align="center">
+  <img src="demo/demo_0.png"><br/>
+  <i>All product in MongoDB</i>
+</p>
+<p align="center">
+  <img src="demo/demo_1.png"><br/>
+  <i>Images</i>
+</p>
+<p align="center">
+  <img src="demo/demo_3.png"><br/>
+  <i>Result count product by category</i>
+</p>
