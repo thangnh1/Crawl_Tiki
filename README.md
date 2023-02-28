@@ -30,6 +30,6 @@ Step 5 : Run command `python count_product.py`, result will be saved to result.t
   <i>Images</i>
 </p>
 <p align="center">
-  <img src="demo/demo_3.png"><br/>
+  <img src="demo/demo_2.png"><br/>
   <i>Result count product by category</i>
 </p>
